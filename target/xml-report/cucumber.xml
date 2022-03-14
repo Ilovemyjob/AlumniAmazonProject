@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="34.088">
+    <testcase classname="ALL Menu" name="user verify the ALL menu" time="27.691">
+        <system-out>
+            <![CDATA[Given user goes to Amazon Home Page.........................................passed
+Then user clicks ALL menu...................................................passed
+And user selects "Electronics"..............................................passed
+Then user verifies that there are 17 subcategories..........................passed
+Then user verifies the title of all subcategories...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazon invalid sign in" name="Amazon invalid sign in" time="5.984">
+        <system-out>
+            <![CDATA[When user goes to Amazon Home Page..........................................passed
+Then user clicks signin button..............................................passed
+And user enters invalid email...............................................passed
+And clicks continue button..................................................passed
+Then checks that the error message is displayed.............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
