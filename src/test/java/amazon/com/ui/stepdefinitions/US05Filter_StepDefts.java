@@ -30,13 +30,16 @@ public class US05Filter_StepDefts {
         JSUtil.scrollDownByJS();
 
         List<WebElement> priceLists = Driver.getDriver().findElements(By.xpath("//a//span[@class='a-price']"));
-
+        System.out.println(priceLists);
         List<Double> pricelistDouble = new ArrayList<>();
         for (WebElement w : priceLists) {
+
             pricelistDouble.add(Double.parseDouble(w.getText().replaceAll("\\D", "")));
 
         }
 
+        System.out.println(pricelistDouble);
+        Collections.sort((pricelistDouble));
         System.out.println(pricelistDouble);
 
         System.out.println("###########################################");
